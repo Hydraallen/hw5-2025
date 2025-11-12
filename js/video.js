@@ -7,15 +7,15 @@ window.addEventListener("load", function () {
 	console.log("Autoplay is set to " + video.autoplay);
     video.loop = false;
 	console.log("Loop is set to " + video.loop);
-	document.querySelector("#volume").textContent = video.volume * 100 + "%";
-	console.log("Volume is set to " + video.volume * 100 + "%");
+	// document.querySelector("#volume").textContent = video.volume * 100 + "%";
+	// console.log("Volume is set to " + video.volume * 100 + "%");
 });
 
 document.querySelector("#play").addEventListener("click", function() {
-	console.log("Play Video");
-	video.play();
-	document.querySelector("#volume").textContent = video.volume * 100 + "%";
-	console.log("Volume is set to " + video.volume * 100 + "%");
+    console.log("Play Video");
+    video.play(); 
+    document.querySelector("#volume").textContent = video.volume * 100 + "%";
+    console.log("Volume is set to " + video.volume * 100 + "%");
 });
 
 document.querySelector("#pause").addEventListener("click", function () {
